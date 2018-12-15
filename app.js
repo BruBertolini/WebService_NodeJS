@@ -109,6 +109,7 @@ app.post("/api/v1/storageLocker", (req, res) => {
     id: sl_db[sl_db.length - 1].id + 1,
     address: req.body.address,
     capacity: req.body.capacity,
+    phone: req.body.phone,
     name: req.body.name,
     openingHour: req.body.openingHour,
     closingHour: req.body.closingHour
@@ -203,6 +204,7 @@ app.put("/api/v1/storageLocker/:id", (req, res) => {
 
     address: req.body.address || slFound.address,
     capacity: req.body.capacity || slFound.capacity,
+    phone: req.body.phone || slFound.phone,
     name: req.body.name || slFound.name,
     openingHour: req.body.openingHour || slFound.openingHour,
     closingHour: req.body.closingHour || slFound.closingHour

@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/nodemon app.js --exec babel-node --"  },
+    "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -16,6 +17,7 @@
     "nodemon": "^1.18.9"
   },
   "engines": {
+    "nodemon": "^1.18.9",
     "node": "10.x"
   },
   "devDependencies": {
